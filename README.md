@@ -67,47 +67,23 @@ A comprehensive security vulnerability scanner for Python projects including Fla
 /python-security-scan
 ```
 
-## Project Structure
-
-```
-agent-skills/
-├── skills/
-│   ├── nextjs-security-scan/
-│   │   ├── SKILL.md              # Skill definition
-│   │   ├── references/           # Vulnerability pattern libraries
-│   │   │   ├── owasp-top-10.md
-│   │   │   ├── xss-patterns.md
-│   │   │   ├── injection-patterns.md
-│   │   │   ├── auth-vulnerabilities.md
-│   │   │   └── nextjs-specific.md
-│   │   ├── scripts/              # Automation tools
-│   │   │   ├── dependency-audit.sh
-│   │   │   ├── secret-scanner.py
-│   │   │   └── pattern-scanner.py
-│   │   └── assets/               # Templates
-│   │       └── report-template.md
-│   │
-│   ├── python-security-scan/
-│   │   ├── SKILL.md              # Skill definition
-│   │   ├── references/           # Vulnerability pattern libraries
-│   │   │   ├── owasp-top-10.md
-│   │   │   ├── python-vulnerabilities.md
-│   │   │   ├── injection-patterns.md
-│   │   │   ├── deserialization.md
-│   │   │   ├── flask-security.md
-│   │   │   ├── django-security.md
-│   │   │   └── fastapi-security.md
-│   │   ├── scripts/              # Automation tools
-│   │   │   ├── dependency-audit.sh
-│   │   │   ├── secret-scanner.py
-│   │   │   └── pattern-scanner.py
-│   │   └── assets/               # Templates
-│   │       └── report-template.md
-│   │
-├── .claude/                      # Claude Code configuration
-├── LICENSE
-└── README.md
-```
+  ## Installation                                                                                    
+                                                                                                     
+  ### Using npx (Recommended)                                                                        
+                                                                                                     
+  \`\`\`bash                                                                                         
+  # Install all skills                                                                               
+  npx skills add jackchain-ai/Skills                                                                 
+                                                                                                     
+  # Install specific skill                                                                           
+  npx skills add jackchain-ai/Skills -s ai-agent-security                                            
+  \`\`\`                                                                                             
+                                                                                                     
+  ### Manual Installation                                                                            
+                                                                                                     
+  \`\`\`bash                                                                                         
+  npx degit jackchain-ai/Skills/ai-agent-security .claude/skills/ai-agent-security                   
+  \`\`\`   
 
 ## Installation
 
